@@ -25,6 +25,8 @@ public class ConnectionTimeoutDemo {
         int connectionTimeout = protocolHandler.getConnectionTimeout();
         if (connectionTimeout != expectedTimeout) {
             throw new IllegalStateException("incorrect connection timeout, expected [" + expectedTimeout + "] but found [" + connectionTimeout + "]");
+        } else {
+            System.out.println("Connection timeout is set as expected to " + expectedTimeout);
         }
     }
 }
